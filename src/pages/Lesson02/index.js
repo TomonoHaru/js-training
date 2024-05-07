@@ -5,9 +5,8 @@ import instruction from "./instruction.md";
 
 const convertData = (input) => {
 
-  for (let i = 0; i < 20; i++) {
-    return [];//input(([tag, count]) => ({ tag, count })); // ここを作りましょう！
-  }
+  input.sort((tag1, tag2) => tag2.count - tag1.count);
+  return input.slice(0, 20);
 };
 
 const Lesson = () => {
