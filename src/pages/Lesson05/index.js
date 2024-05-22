@@ -19,7 +19,7 @@ const convertData = (input) => {
   for (const { y, gender } of input) {
     const i = Math.round(y) - min;
     bins[i][gender] += 1;
-    console.log({ y, gender });
+    // console.log({ y, gender });
   }
   return bins; // ここを作りましょう！
 };

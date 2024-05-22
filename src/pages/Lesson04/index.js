@@ -4,6 +4,7 @@ import Chart from "../../components/Chart04";
 import instruction from "./instruction.md";
 
 const convertData = (input) => {
+  // Setは重複を許さない
   const species = Array.from(new Set(input.map(({ species }) => species)));
   return species.map((species) => {
     return {
